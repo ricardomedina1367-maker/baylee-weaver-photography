@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Love · Reviews & Testimonials · Baylee Weaver Photography · Plano TX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* PAGE SPECIFIC */
+    body { padding-top: 68px; }
+
+    /* Hero */
+    .hero {
+      height: 50vh;
+      background: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 48px;
+    }
+    .hero-inner { max-width: 700px; }
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #E8C9A8;
+      margin-bottom: 0;
+    }
+    .hero-rule {
+      width: 48px;
+      height: 1px;
+      background: #E8C9A8;
+      margin: 20px auto 32px;
+    }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 58px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: #E8C9A8;
+    }
+    .hero-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: #fff;
+      padding: 48px 0;
+      border-bottom: 1px solid rgba(216,206,191,0.4);
+    }
+    .stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .stat-item {
+      text-align: center;
+      padding: 0 24px;
+    }
+    .stat-item + .stat-item {
+      border-left: 1px solid rgba(216,206,191,0.5);
+    }
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 56px;
+      font-weight: 300;
+      color: #C97B50;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    /* Featured Testimonials */
+    .featured-testimonials {
+      background: #fff;
+      padding: 96px 0;
+    }
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .testimonials-header .section-rule {
+      margin: 20px auto 32px;
+    }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .testimonial-card {
+      border: 1px solid rgba(216,206,191,0.5);
+      padding: 40px;
+      position: relative;
+    }
+    .testimonial-card:hover {
+      border-color: #E8C9A8;
+    }
+    .stars {
+      color: #C97B50;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .testimonial-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 300;
+      color: #2a2a2a;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .testimonial-quote::before {
+      content: '\201C';
+      font-size: 48px;
+      color: #E8C9A8;
+      line-height: 0;
+      vertical-align: -18px;
+      margin-right: 4px;
+      font-style: normal;
+    }
+    .testimonial-author {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2a2a2a;
+      margin-bottom: 4px;
+    }
+    .testimonial-meta {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+    }
+
+    /* Gallery Row */
+    .gallery-row {
+      background: #F5F2EE;
+      padding: 96px 0;
+    }
+    .gallery-header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+      margin-bottom: 40px;
+    }
+    .gallery-photos {
+      display: flex;
+      width: 100%;
+    }
+    .gallery-photos img {
+      width: 25%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* More Testimonials */
+    .more-testimonials {
+      background: #fff;
+      padding: 96px 0;
+    }
+    .more-testimonials-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .more-testimonials-header .section-rule {
+      margin: 20px auto 32px;
+    }
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card-sm {
+      border: 1px solid rgba(216,206,191,0.5);
+      padding: 28px;
+    }
+    .testimonial-card-sm:hover {
+      border-color: #E8C9A8;
+    }
+    .testimonial-card-sm .stars {
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+    .testimonial-card-sm .testimonial-quote {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .testimonial-card-sm .testimonial-quote::before {
+      font-size: 36px;
+      vertical-align: -14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment.html">Investment</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Client Love</p>
+      <div class="hero-rule"></div>
+      <h1 class="hero-headline">Words from the <em>families</em> I've served</h1>
+      <p class="hero-sub">Real experiences from real families across the DFW area</p>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-number">200+</div>
+        <div class="stat-label">Families Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5.0</div>
+        <div class="stat-label">Average Google Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3 yrs</div>
+        <div class="stat-label">Serving DFW</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">14 days</div>
+        <div class="stat-label">Gallery Turnaround</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Testimonials -->
+  <section class="featured-testimonials">
+    <div class="section-inner">
+      <div class="testimonials-header">
+        <p class="section-eyebrow">What Families Are Saying</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Their words mean <em>everything</em></h2>
+      </div>
+      <div class="featured-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Baylee made me feel so comfortable. I was nervous about being in front of the camera and she had me laughing within five minutes. The photos are everything I hoped for and more.</p>
+          <p class="testimonial-author">Sarah M.</p>
+          <p class="testimonial-meta">Newborn Session · Plano, TX</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">We've used Baylee for maternity, newborn, AND our one-year milestone. We'll never go to anyone else. She captures moments I didn't even know were happening.</p>
+          <p class="testimonial-author">Jessica &amp; Carlos R.</p>
+          <p class="testimonial-meta">Maternity + Newborn · Frisco, TX</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">I was 34 weeks and exhausted and honestly didn't want to do photos. Baylee changed my mind completely. These are some of my most treasured photos. Book her. Right now.</p>
+          <p class="testimonial-author">Amanda K.</p>
+          <p class="testimonial-meta">Maternity Session · Allen, TX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Row -->
+  <section class="gallery-row">
+    <div class="gallery-header">
+      <p class="section-eyebrow">From Their Sessions</p>
+      <div class="section-rule"></div>
+    </div>
+    <div class="gallery-photos">
+      <img src="https://picsum.photos/seed/cl1/600/360" alt="Client session photo">
+      <img src="https://picsum.photos/seed/cl2/600/360" alt="Client session photo">
+      <img src="https://picsum.photos/seed/cl3/600/360" alt="Client session photo">
+      <img src="https://picsum.photos/seed/cl4/600/360" alt="Client session photo">
+    </div>
+  </section>
+
+  <!-- More Testimonials -->
+  <section class="more-testimonials">
+    <div class="section-inner">
+      <div class="more-testimonials-header">
+        <p class="section-eyebrow">More Stories</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Heard from <em>every corner</em> of DFW</h2>
+      </div>
+      <div class="more-grid">
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">The sneak peek she sent the night of our session made me cry. Actual tears. The full gallery three days early made it even better.</p>
+          <p class="testimonial-author">Megan T.</p>
+          <p class="testimonial-meta">Family · McKinney, TX</p>
+        </div>
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Our newborn session was so peaceful. Baylee was patient, warm, and clearly knew exactly what she was doing. My husband even said it was better than he expected!</p>
+          <p class="testimonial-author">Priya &amp; Raj K.</p>
+          <p class="testimonial-meta">Newborn · Plano, TX</p>
+        </div>
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">She captured things I didn't even notice happening. My daughter reaching for her daddy's hand. My husband kissing the top of my head. I would have missed all of it.</p>
+          <p class="testimonial-author">Lauren B.</p>
+          <p class="testimonial-meta">Family · Frisco, TX</p>
+        </div>
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Booked her for maternity and ended up doing newborn, family minis, and our Christmas portraits too. She's our photographer for life.</p>
+          <p class="testimonial-author">Danielle W.</p>
+          <p class="testimonial-meta">Multiple Sessions · Allen, TX</p>
+        </div>
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">If you're on the fence — just book it. You will not regret it for a single second. The experience and the photos are both absolutely worth it.</p>
+          <p class="testimonial-author">Kayla M.</p>
+          <p class="testimonial-meta">Newborn · Richardson, TX</p>
+        </div>
+
+        <div class="testimonial-card-sm">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">We found Baylee through a friend's Instagram post and I'm so glad we did. From the inquiry to gallery delivery, it was seamless and personal.</p>
+          <p class="testimonial-author">Thomas &amp; Elle V.</p>
+          <p class="testimonial-meta">Family · Plano, TX</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <p class="cta-eyebrow">Ready to Join Them?</p>
+    <h2 class="cta-headline">Join hundreds of <em>happy families</em></h2>
+    <p class="cta-sub">Let's create photos you'll treasure for a lifetime</p>
+    <a href="contact.html" class="btn-white">Book Your Session</a>
+    <a href="portfolio.html" class="btn-outline-white">See the Portfolio</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Baylee Weaver</div>
+        <div class="footer-brand-script">photography</div>
+        <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#newborn">Newborn Sessions</a></li>
+          <li><a href="services.html#maternity">Maternity Sessions</a></li>
+          <li><a href="services.html#family">Family Portraits</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+          <li><a href="#">Plano · Frisco · Allen · McKinney</a></li>
+          <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Baylee Weaver Photography · Plano, Texas · All rights reserved</span>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annual Membership · Photography Membership Club · Baylee Weaver Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* PAGE SPECIFIC */
+    body { padding-top: 68px; }
+
+    /* Hero — Split Layout */
+    .hero {
+      height: 70vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 560px;
+    }
+    .hero-left {
+      background: #F5F2EE;
+      display: flex;
+      align-items: center;
+      padding: 72px 80px;
+    }
+    .hero-content { max-width: 500px; }
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+    }
+    .hero-rule {
+      width: 48px;
+      height: 1px;
+      background: #C97B50;
+      margin: 20px 0 32px;
+    }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 54px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #2a2a2a;
+      margin-bottom: 24px;
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: #C97B50;
+    }
+    .hero-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .hero-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* What It Is */
+    .what-it-is {
+      background: #fff;
+      padding: 96px 0;
+      text-align: center;
+    }
+    .what-it-is .section-rule {
+      margin: 20px auto 32px;
+    }
+    .lead-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #444;
+      max-width: 760px;
+      margin: 0 auto 48px;
+    }
+    .seasons-row {
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+      margin-top: 48px;
+    }
+    .season-item {
+      text-align: center;
+    }
+    .season-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .season-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    /* Membership Tiers */
+    .tiers-section {
+      background: #F5F2EE;
+      padding: 96px 0;
+    }
+    .tiers-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .tiers-header .section-rule {
+      margin: 20px auto 32px;
+    }
+    .tiers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .tier-card {
+      background: #fff;
+      border: 1px solid rgba(216,206,191,0.6);
+      padding: 48px;
+      position: relative;
+    }
+    .tier-card.popular {
+      border-color: #C97B50;
+    }
+    .popular-badge {
+      position: absolute;
+      top: -1px;
+      right: 32px;
+      background: #C97B50;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+    }
+    .tier-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+      margin-bottom: 16px;
+    }
+    .tier-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 300;
+      color: #2a2a2a;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .tier-monthly {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: #888;
+      margin-bottom: 32px;
+    }
+    .tier-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(216,206,191,0.5);
+      margin-bottom: 32px;
+    }
+    .tier-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .tier-features li {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #444;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .tier-features li::before {
+      content: '✓';
+      color: #C97B50;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .tier-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #fff;
+      background: #4A6FA5;
+      padding: 14px 32px;
+      text-decoration: none;
+      border-radius: 2px;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .tier-btn:hover { background: #3a5a8a; }
+    .tier-card.popular .tier-btn {
+      background: #C97B50;
+    }
+    .tier-card.popular .tier-btn:hover { background: #b56a40; }
+
+    /* How It Works */
+    .how-it-works {
+      background: #2a2a2a;
+      padding: 96px 0;
+    }
+    .how-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .how-header .section-eyebrow { color: rgba(142,180,216,0.8); }
+    .how-header .section-rule {
+      background: rgba(201,123,80,0.6);
+      margin: 20px auto 32px;
+    }
+    .how-header .section-title { color: #fff; }
+    .how-header .section-title em { color: #E8C9A8; }
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+    .step-item {
+      text-align: center;
+      position: relative;
+    }
+    .step-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 120px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .step-content { position: relative; z-index: 1; padding-top: 48px; }
+    .step-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+      margin-bottom: 12px;
+    }
+    .step-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    /* Member Testimonial Spotlight */
+    .spotlight-section {
+      background: #fff;
+      padding: 96px 0;
+    }
+    .spotlight-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+    }
+    .spotlight-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .spotlight-header .section-rule {
+      margin: 20px auto 32px;
+    }
+    .spotlight-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .spotlight-photo img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+    .spotlight-quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 120px;
+      color: #E8C9A8;
+      line-height: 0.6;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .spotlight-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-style: italic;
+      font-weight: 300;
+      color: #2a2a2a;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .spotlight-author {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #2a2a2a;
+      margin-bottom: 4px;
+    }
+    .spotlight-meta {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+    }
+    .spotlight-rule {
+      width: 48px;
+      height: 1px;
+      background: #C97B50;
+      margin-bottom: 16px;
+    }
+
+    /* FAQ */
+    .faq-section {
+      background: #F5F2EE;
+      padding: 96px 0;
+    }
+    .faq-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .faq-header .section-rule {
+      margin: 20px auto 32px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .faq-item {
+      background: #fff;
+      padding: 36px;
+      border: 1px solid rgba(216,206,191,0.5);
+    }
+    .faq-q {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #2a2a2a;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .faq-rule {
+      width: 32px;
+      height: 1px;
+      background: #C97B50;
+      margin-bottom: 16px;
+    }
+    .faq-a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment.html">Investment</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-content">
+        <p class="hero-eyebrow">The Membership</p>
+        <div class="hero-rule"></div>
+        <h1 class="hero-headline">Your family's story, <em>all year long</em></h1>
+        <p class="hero-body">One annual membership. Four sessions. One photographer who knows your family.</p>
+        <a href="contact.html" class="btn-primary">Join the Membership</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://picsum.photos/seed/mem1/700/900" alt="Family photography membership">
+    </div>
+  </div>
+
+  <!-- What It Is -->
+  <section class="what-it-is">
+    <div class="section-inner">
+      <p class="section-eyebrow">What It Is</p>
+      <div class="section-rule"></div>
+      <h2 class="section-title">More than sessions — it's a <em>relationship</em></h2>
+      <div class="lead-text">
+        <p style="margin-bottom: 20px;">The Baylee Weaver Annual Membership is designed for families who don't want to miss a single season. One flat annual investment covers four curated sessions throughout the year — newborn, milestone, holiday, and a family portrait session.</p>
+        <p>I get to know your children's personalities, your favorite spots, what makes everyone laugh. By your second or third session, it shows — and the photos show it too.</p>
+      </div>
+      <div class="seasons-row">
+        <div class="season-item">
+          <span class="season-icon">🌸</span>
+          <div class="season-label">Spring Session</div>
+        </div>
+        <div class="season-item">
+          <span class="season-icon">☀️</span>
+          <div class="season-label">Summer Session</div>
+        </div>
+        <div class="season-item">
+          <span class="season-icon">🍂</span>
+          <div class="season-label">Fall Session</div>
+        </div>
+        <div class="season-item">
+          <span class="season-icon">❄️</span>
+          <div class="season-label">Winter / Holiday Session</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Tiers -->
+  <section class="tiers-section">
+    <div class="section-inner">
+      <div class="tiers-header">
+        <p class="section-eyebrow">Membership Plans</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Choose your <em>level of coverage</em></h2>
+      </div>
+      <div class="tiers-grid">
+
+        <div class="tier-card">
+          <p class="tier-name">The Portrait Year</p>
+          <div class="tier-price">$1,800<span style="font-size: 24px; color: #888;">/year</span></div>
+          <p class="tier-monthly">or $160 / month</p>
+          <div class="tier-divider"></div>
+          <ul class="tier-features">
+            <li>4 sessions per year (one per quarter)</li>
+            <li>20+ images per session</li>
+            <li>80+ total images annually</li>
+            <li>Priority booking access</li>
+            <li>Dedicated client portal</li>
+            <li>Annual album credit ($150 value)</li>
+          </ul>
+          <a href="contact.html" class="tier-btn">Join the Membership</a>
+        </div>
+
+        <div class="tier-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <p class="tier-name">The Full Story</p>
+          <div class="tier-price">$2,800<span style="font-size: 24px; color: #888;">/year</span></div>
+          <p class="tier-monthly">or $240 / month</p>
+          <div class="tier-divider"></div>
+          <ul class="tier-features">
+            <li>Everything in Portrait Year</li>
+            <li>6 sessions per year</li>
+            <li>30+ images per session</li>
+            <li>180+ total images annually</li>
+            <li>Rush gallery on any 2 sessions</li>
+            <li>$200 print credit included</li>
+            <li>Holiday card design included</li>
+          </ul>
+          <a href="contact.html" class="tier-btn">Join the Membership</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="section-inner">
+      <div class="how-header">
+        <p class="section-eyebrow">The Process</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">How it <em>works</em></h2>
+      </div>
+      <div class="steps-row">
+        <div class="step-item">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <p class="step-label">Step One</p>
+            <p class="step-title">Choose your plan</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <p class="step-label">Step Two</p>
+            <p class="step-title">Book your first session</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <p class="step-label">Step Three</p>
+            <p class="step-title">Baylee tracks your family's story</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <p class="step-label">Step Four</p>
+            <p class="step-title">Relive every season</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Testimonial Spotlight -->
+  <section class="spotlight-section">
+    <div class="spotlight-inner">
+      <div class="spotlight-header">
+        <p class="section-eyebrow">Member Spotlight</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">What members <em>experience</em></h2>
+      </div>
+      <div class="spotlight-layout">
+        <div class="spotlight-photo">
+          <img src="https://picsum.photos/seed/mem2/500/500" alt="Member family photo">
+        </div>
+        <div class="spotlight-text">
+          <span class="spotlight-quote-mark">&ldquo;</span>
+          <p class="spotlight-quote">We joined the membership after our newborn session and I cannot imagine our year without it. Baylee has become like family. She knows our daughter's personality, our favorite spots, what makes us laugh. These photos are our family's history.</p>
+          <div class="spotlight-rule"></div>
+          <p class="spotlight-author">The Hartman Family</p>
+          <p class="spotlight-meta">Membership Members since 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="section-inner">
+      <div class="faq-header">
+        <p class="section-eyebrow">Questions</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Answers to the <em>common questions</em></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <p class="faq-q">Can I pause my membership?</p>
+          <div class="faq-rule"></div>
+          <p class="faq-a">Yes, members can pause for up to 2 months once per year with no penalty. Life happens — we'll be here when you're ready.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">What if I need an extra session?</p>
+          <div class="faq-rule"></div>
+          <p class="faq-a">Members receive 20% off any additional sessions booked outside their plan. Your loyalty is always rewarded.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Can I give it as a gift?</p>
+          <div class="faq-rule"></div>
+          <p class="faq-a">Absolutely. Membership gift cards are available — perfect for new parents, grandparents who want to give something truly meaningful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <p class="cta-eyebrow">Begin the Journey</p>
+    <h2 class="cta-headline">Start your family's <em>story</em> today</h2>
+    <p class="cta-sub">Four sessions. One year. A lifetime of memories.</p>
+    <a href="contact.html" class="btn-white">Join the Membership</a>
+    <a href="contact.html" class="btn-outline-white">Ask a Question</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Baylee Weaver</div>
+        <div class="footer-brand-script">photography</div>
+        <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#newborn">Newborn Sessions</a></li>
+          <li><a href="services.html#maternity">Maternity Sessions</a></li>
+          <li><a href="services.html#family">Family Portraits</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+          <li><a href="#">Plano · Frisco · Allen · McKinney</a></li>
+          <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Baylee Weaver Photography · Plano, Texas · All rights reserved</span>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

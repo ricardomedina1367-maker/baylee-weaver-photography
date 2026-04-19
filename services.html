@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photography Services · Newborn · Maternity · Family · Baylee Weaver Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    .caps { font-family: 'Montserrat', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; }
+    .script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-ghost { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #4A6FA5; text-decoration: none; border-bottom: 1px solid #8EB4D8; padding-bottom: 2px; transition: color 0.2s; }
+    .btn-ghost:hover { color: #2a4a70; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* ─── PAGE-SPECIFIC STYLES ─── */
+    body { padding-top: 68px; }
+
+    /* Hero */
+    .services-hero {
+      height: 55vh;
+      min-height: 440px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .services-hero-text {
+      background: #F5F2EE;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 64px 64px 72px;
+    }
+    .services-hero-text .section-rule { margin: 16px 0 28px; }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #2a2a2a;
+      margin-bottom: 24px;
+    }
+    .hero-headline em { font-style: italic; color: #C97B50; }
+    .hero-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #888;
+    }
+    .services-hero-photo { overflow: hidden; }
+    .services-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
+    /* Service sections */
+    .service-section { padding: 96px 0; }
+    .service-section.cream-bg { background: #F5F2EE; }
+    .service-section.white-bg { background: #fff; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .service-grid.image-left { }
+    .service-grid.image-right .service-text { order: -1; }
+
+    .service-image {
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+    .service-image img { width: 100%; display: block; }
+
+    .service-text .section-rule { margin: 16px 0 28px; }
+
+    .service-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.8;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+
+    .service-details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .service-details li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .service-details li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C97B50;
+      flex-shrink: 0;
+    }
+
+    .service-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 300;
+      color: #2a2a2a;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .service-price .starting {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #aaa;
+    }
+    .service-price .badge {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      background: #C97B50;
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+
+    /* What's always included */
+    .included-section {
+      background: #2a2a2a;
+      padding: 96px 0;
+    }
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 56px;
+    }
+    .included-item {
+      padding: 40px 28px;
+      border: 1px solid rgba(255,255,255,0.07);
+      text-align: center;
+    }
+    .included-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .included-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 300;
+      color: #E8C9A8;
+      margin-bottom: 8px;
+    }
+    .included-detail {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.7;
+    }
+    .included-header .section-eyebrow { color: #8EB4D8; }
+    .included-header .section-title { color: #fff; }
+    .included-header .section-title em { color: #E8C9A8; }
+    .included-header .section-rule { background: #C97B50; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Book a Call</a>
+</nav>
+
+<!-- HERO -->
+<div class="services-hero">
+  <div class="services-hero-text">
+    <p class="section-eyebrow">What Baylee Offers</p>
+    <div class="section-rule"></div>
+    <h1 class="hero-headline">Sessions crafted for <em>connection</em></h1>
+    <p class="hero-sub">Newborn · Maternity · Family · Plano, Texas</p>
+  </div>
+  <div class="services-hero-photo">
+    <img src="https://picsum.photos/seed/services-hero-warmlight/900/660" alt="Photography session"/>
+  </div>
+</div>
+
+<!-- MATERNITY SECTION -->
+<section id="maternity" class="service-section white-bg">
+  <div class="section-inner">
+    <div class="service-grid image-right">
+      <div class="service-text">
+        <p class="section-eyebrow">The Maternity Session</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Celebrating the <em>bump</em></h2>
+        <p class="service-body">Your pregnancy is one of the most transformative seasons of your life. Baylee's maternity sessions are calm, romantic, and unhurried — designed to make you feel beautiful at every angle. Outdoor golden hour or studio window light. You bring yourself; she handles the rest.</p>
+        <ul class="service-details">
+          <li>60-minute session</li>
+          <li>25+ fully edited images</li>
+          <li>Outdoor golden hour or studio</li>
+          <li>Outfit guidance included</li>
+          <li>Gallery delivered within 14 days</li>
+        </ul>
+        <div class="service-price">
+          $595 <span class="starting">Starting at</span>
+        </div>
+        <a href="contact.html" class="btn-primary">Book Your Maternity Session</a>
+      </div>
+      <div class="service-image">
+        <img src="https://picsum.photos/seed/maternity-golden-hour/560/700" alt="Maternity photography session"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWBORN SECTION -->
+<section id="newborn" class="service-section cream-bg">
+  <div class="section-inner">
+    <div class="service-grid image-left">
+      <div class="service-image">
+        <img src="https://picsum.photos/seed/newborn-warm-curl/560/700" alt="Newborn photography session"/>
+      </div>
+      <div class="service-text">
+        <p class="section-eyebrow">The Newborn Session</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Days 5–14 are <em>magic</em></h2>
+        <p class="service-body">Newborns change so fast. Baylee's sessions happen in the first two weeks — when they still curl up, sleep deeply, and fit in the crook of your arm. Sessions are slow, safe, and warm. She is newborn posing certified and has a studio space designed for tiny humans.</p>
+        <ul class="service-details">
+          <li>2–3 hour session</li>
+          <li>40+ fully edited images</li>
+          <li>In-home or studio</li>
+          <li>Sibling and family portraits included</li>
+          <li>Gallery delivered within 14 days</li>
+        </ul>
+        <div class="service-price">
+          $595 <span class="starting">Starting at</span> <span class="badge">Most Popular</span>
+        </div>
+        <a href="contact.html" class="btn-primary">Reserve Your Newborn Date</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY SECTION -->
+<section id="family" class="service-section white-bg">
+  <div class="section-inner">
+    <div class="service-grid image-right">
+      <div class="service-text">
+        <p class="section-eyebrow">The Family Session</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">Golden hour with the <em>whole crew</em></h2>
+        <p class="service-body">Kids don't sit still and that's fine. Baylee's family sessions are candid-forward — chasing kids, tickle fights, piggyback rides. The real moments always make the best photos. Sessions work beautifully at local parks, your own backyard, or Baylee's curated outdoor locations.</p>
+        <ul class="service-details">
+          <li>45-minute session</li>
+          <li>30+ fully edited images</li>
+          <li>Up to 6 family members</li>
+          <li>Sibling/pet friendly</li>
+          <li>Golden hour timing</li>
+        </ul>
+        <div class="service-price">
+          $495 <span class="starting">Starting at</span>
+        </div>
+        <a href="contact.html" class="btn-primary">Book Your Family Session</a>
+      </div>
+      <div class="service-image">
+        <img src="https://picsum.photos/seed/family-golden-park/560/700" alt="Family photography session"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S ALWAYS INCLUDED -->
+<section class="included-section">
+  <div class="section-inner">
+    <div class="included-header">
+      <p class="section-eyebrow">Every session, every time</p>
+      <div class="section-rule"></div>
+      <h2 class="section-title" style="color:#fff;">What's always <em style="color:#E8C9A8;">included</em></h2>
+    </div>
+    <div class="included-grid">
+      <div class="included-item">
+        <span class="included-icon">🖼</span>
+        <div class="included-title">Online Gallery</div>
+        <p class="included-detail">via Pic-Time · shareable with family</p>
+      </div>
+      <div class="included-item">
+        <span class="included-icon">📄</span>
+        <div class="included-title">Print Release</div>
+        <p class="included-detail">full rights to print your images anywhere</p>
+      </div>
+      <div class="included-item">
+        <span class="included-icon">💬</span>
+        <div class="included-title">Personal Reply</div>
+        <p class="included-detail">within 24 hours · always from Baylee</p>
+      </div>
+      <div class="included-item">
+        <span class="included-icon">🛍</span>
+        <div class="included-title">30-Day Print Store</div>
+        <p class="included-detail">order prints, albums &amp; wall art with ease</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <p class="cta-eyebrow">Let's get started</p>
+  <h2 class="cta-headline">Ready to <em>book?</em></h2>
+  <p class="cta-sub">Reach out today — dates fill quickly</p>
+  <a href="contact.html" class="btn-white">Book a Free Call</a>
+  <a href="investment.html" class="btn-outline-white">View Pricing</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Baylee Weaver</div>
+      <div class="footer-brand-script">photography</div>
+      <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigate</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Services</p>
+      <ul class="footer-links">
+        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+        <li><a href="services.html#maternity">Maternity Sessions</a></li>
+        <li><a href="services.html#family">Family Portraits</a></li>
+        <li><a href="membership.html">Membership</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+        <li><a href="#">Plano · Frisco · Allen · McKinney</a></li>
+        <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Baylee Weaver Photography · Plano, Texas · All rights reserved</span>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

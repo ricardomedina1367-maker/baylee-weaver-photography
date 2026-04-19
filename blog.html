@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog · Photography Tips & Session Inspiration · Baylee Weaver Photography · Plano TX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* PAGE SPECIFIC */
+    body { padding-top: 68px; }
+
+    /* Hero */
+    .hero {
+      height: 50vh;
+      background: #F5F2EE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 48px;
+      min-height: 380px;
+    }
+    .hero-inner { max-width: 700px; }
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+    }
+    .hero-rule {
+      width: 48px;
+      height: 1px;
+      background: #C97B50;
+      margin: 20px auto 32px;
+    }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 58px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #2a2a2a;
+      margin-bottom: 20px;
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: #C97B50;
+    }
+    .hero-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: #888;
+    }
+
+    /* Featured Post */
+    .featured-post {
+      background: #fff;
+      padding: 96px 0;
+    }
+    .featured-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+    }
+    .featured-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid rgba(216,206,191,0.5);
+      overflow: hidden;
+    }
+    .featured-card-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+    .featured-card-content {
+      padding: 56px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .post-category {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #C97B50;
+      margin-bottom: 8px;
+    }
+    .post-date {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .post-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: #2a2a2a;
+      margin-bottom: 20px;
+    }
+    .post-excerpt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .post-read-link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #4A6FA5;
+      text-decoration: none;
+      border: 1px solid #4A6FA5;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      transition: all 0.2s;
+      align-self: flex-start;
+    }
+    .post-read-link:hover {
+      background: #4A6FA5;
+      color: #fff;
+    }
+
+    /* Filter Bar */
+    .filter-section {
+      background: #fff;
+      padding: 32px 0 0;
+    }
+    .filter-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+      border-top: 1px solid rgba(216,206,191,0.4);
+      padding-top: 32px;
+    }
+    .filter-pills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .filter-pill {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 2px;
+      border: 1px solid rgba(216,206,191,0.8);
+      background: transparent;
+      color: #888;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-pill:hover {
+      border-color: #C97B50;
+      color: #C97B50;
+    }
+    .filter-pill.active {
+      background: #C97B50;
+      border-color: #C97B50;
+      color: #fff;
+    }
+
+    /* Blog Grid */
+    .blog-grid-section {
+      background: #fff;
+      padding: 48px 0 96px;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .blog-card {
+      border: 1px solid rgba(216,206,191,0.5);
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .blog-card:hover { border-color: #E8C9A8; }
+    .blog-card-img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-card-body {
+      padding: 28px;
+    }
+    .blog-card-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .category-badge {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4A6FA5;
+      background: rgba(142,180,216,0.12);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+    .blog-date {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      color: #aaa;
+    }
+    .blog-card-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.3;
+      color: #2a2a2a;
+      margin-bottom: 12px;
+    }
+    .blog-card-excerpt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: #666;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .blog-read-more {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4A6FA5;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .blog-read-more:hover { color: #C97B50; }
+
+    /* Newsletter */
+    .newsletter-section {
+      background: #2a2a2a;
+      padding: 80px 0;
+    }
+    .newsletter-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .newsletter-text-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+      margin-bottom: 12px;
+    }
+    .newsletter-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .newsletter-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+    }
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .newsletter-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 4px;
+      display: block;
+    }
+    .newsletter-input {
+      width: 100%;
+      padding: 14px 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 300;
+      outline: none;
+      border-radius: 2px;
+      transition: border-color 0.2s;
+    }
+    .newsletter-input::placeholder {
+      color: rgba(255,255,255,0.25);
+    }
+    .newsletter-input:focus {
+      border-color: rgba(255,255,255,0.35);
+    }
+    .newsletter-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #2a2a2a;
+      background: #E8C9A8;
+      border: none;
+      padding: 14px 32px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+      align-self: flex-start;
+    }
+    .newsletter-btn:hover { background: #d4b494; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment.html">Investment</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">The Blog</p>
+      <div class="hero-rule"></div>
+      <h1 class="hero-headline">Stories, tips &amp; <em>inspiration</em></h1>
+      <p class="hero-sub">For families getting ready for their session — and reliving it after.</p>
+    </div>
+  </div>
+
+  <!-- Featured Post -->
+  <section class="featured-post">
+    <div class="featured-inner">
+      <div class="featured-card">
+        <img src="https://picsum.photos/seed/blog_feat/800/500" alt="Newborn session blog post" class="featured-card-img">
+        <div class="featured-card-content">
+          <p class="post-category">Newborn Tips</p>
+          <p class="post-date">April 2026</p>
+          <h2 class="post-headline">What to Expect at Your Newborn Session (and How to Prepare Your Home)</h2>
+          <p class="post-excerpt">Your baby's first days are fleeting — newborn sessions capture them at their softest. We'll walk you through exactly what to expect, from timing the session around feeding schedules to the simple things you can do at home to set us up for beautiful, timeless images.</p>
+          <a href="#" class="post-read-link">Read the Post →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-section">
+    <div class="filter-inner">
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="newborn">Newborn</button>
+        <button class="filter-pill" data-filter="maternity">Maternity</button>
+        <button class="filter-pill" data-filter="family">Family</button>
+        <button class="filter-pill" data-filter="tips">Session Tips</button>
+        <button class="filter-pill" data-filter="behind">Behind the Lens</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Grid -->
+  <section class="blog-grid-section">
+    <div class="section-inner">
+      <div class="blog-grid" id="blog-grid">
+
+        <div class="blog-card" data-category="newborn">
+          <img src="https://picsum.photos/seed/blog1/600/400" alt="Newborn session tips" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Newborn</span>
+              <span class="blog-date">March 2026</span>
+            </div>
+            <h3 class="blog-card-headline">5 Things to Do Before Your Newborn Session</h3>
+            <p class="blog-card-excerpt">Your baby's arrival is already overwhelming — here's a simple checklist to make session day seamless. From laundry to snacks, we've got you covered.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="maternity">
+          <img src="https://picsum.photos/seed/blog2/600/400" alt="Maternity session timing" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Maternity</span>
+              <span class="blog-date">February 2026</span>
+            </div>
+            <h3 class="blog-card-headline">The Best Time to Book Your Maternity Session in DFW</h3>
+            <p class="blog-card-excerpt">Timing matters when it comes to maternity photos. Here's the sweet spot for your bump and for the DFW light.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="tips">
+          <img src="https://picsum.photos/seed/blog3/600/400" alt="What to wear for family portraits" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Session Tips</span>
+              <span class="blog-date">January 2026</span>
+            </div>
+            <h3 class="blog-card-headline">What to Wear for Your Family Portrait Session</h3>
+            <p class="blog-card-excerpt">Coordinating four people in an outfit that photographs well doesn't have to be stressful. Here's my simple guide.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="newborn">
+          <img src="https://picsum.photos/seed/blog4/600/400" alt="In-home vs studio newborn session" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Newborn</span>
+              <span class="blog-date">December 2025</span>
+            </div>
+            <h3 class="blog-card-headline">In-Home vs. Studio: Which Newborn Session is Right for You?</h3>
+            <p class="blog-card-excerpt">Both options produce stunning results — but they feel very different. Here's how to decide.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="behind">
+          <img src="https://picsum.photos/seed/blog5/600/400" alt="Day in the life of a DFW newborn photographer" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Behind the Lens</span>
+              <span class="blog-date">November 2025</span>
+            </div>
+            <h3 class="blog-card-headline">A Day in the Life of a DFW Newborn Photographer</h3>
+            <p class="blog-card-excerpt">What does a session day actually look like? From the early morning prep to the late-night editing, here's the truth.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="family">
+          <img src="https://picsum.photos/seed/blog6/600/400" alt="Hartman family fall portrait session Frisco TX" class="blog-card-img">
+          <div class="blog-card-body">
+            <div class="blog-card-top">
+              <span class="category-badge">Family</span>
+              <span class="blog-date">October 2025</span>
+            </div>
+            <h3 class="blog-card-headline">The Hartman Family's Fall Portrait Session — Frisco, TX</h3>
+            <p class="blog-card-excerpt">A golden-hour family session at Frisco's Heritage Ranch that reminded us why we do this work.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <div class="newsletter-section">
+    <div class="newsletter-inner">
+      <div>
+        <p class="newsletter-text-eyebrow">Stay in the loop</p>
+        <h2 class="newsletter-headline">Get session tips in your inbox</h2>
+        <p class="newsletter-body">Monthly guidance for families preparing for their portraits — no spam, ever.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="return false;">
+        <div>
+          <label class="newsletter-label" for="newsletter-email">Your email address</label>
+          <input class="newsletter-input" type="email" id="newsletter-email" name="email" placeholder="you@example.com">
+        </div>
+        <button class="newsletter-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <p class="cta-eyebrow">Your Turn</p>
+    <h2 class="cta-headline">Ready to be in <em>the blog?</em></h2>
+    <p class="cta-sub">Book your session and let's make something beautiful.</p>
+    <a href="contact.html" class="btn-white">Book a Free Call</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Baylee Weaver</div>
+        <div class="footer-brand-script">photography</div>
+        <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#newborn">Newborn Sessions</a></li>
+          <li><a href="services.html#maternity">Maternity Sessions</a></li>
+          <li><a href="services.html#family">Family Portraits</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+          <li><a href="#">Plano · Frisco · Allen · McKinney</a></li>
+          <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Baylee Weaver Photography · Plano, Texas · All rights reserved</span>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const pills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('#blog-grid .blog-card');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        // Update active pill
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+
+        const filter = pill.dataset.filter;
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

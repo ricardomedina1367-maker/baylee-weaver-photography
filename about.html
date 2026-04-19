@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Baylee Weaver · Newborn &amp; Family Photographer · Plano, TX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    .caps { font-family: 'Montserrat', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; }
+    .script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-ghost { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #4A6FA5; text-decoration: none; border-bottom: 1px solid #8EB4D8; padding-bottom: 2px; transition: color 0.2s; }
+    .btn-ghost:hover { color: #2a4a70; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* ─── PAGE-SPECIFIC STYLES ─── */
+    body { padding-top: 68px; }
+
+    /* Hero */
+    .about-hero {
+      height: 60vh;
+      min-height: 480px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-hero-text {
+      background: #F5F2EE;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 64px 72px 72px;
+    }
+    .about-hero-text .section-eyebrow { margin-bottom: 12px; }
+    .about-hero-text .section-rule { margin: 16px 0 28px; }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 1.05;
+      color: #2a2a2a;
+      margin-bottom: 24px;
+    }
+    .hero-headline em { font-style: italic; color: #C97B50; }
+    .hero-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: #777;
+      line-height: 1.5;
+    }
+    .about-hero-photo {
+      overflow: hidden;
+      position: relative;
+    }
+    .about-hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* Story section */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 80px;
+      align-items: start;
+    }
+    .story-bio {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #444;
+    }
+    .story-bio p + p { margin-top: 20px; }
+    .story-photo {
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+    .story-photo img {
+      width: 100%;
+      display: block;
+    }
+    .story-photo-caption {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    /* Philosophy section */
+    .philosophy-section { background: #F5F2EE; }
+    .philosophy-header { text-align: center; margin-bottom: 64px; }
+    .philosophy-header .section-rule { margin: 16px auto 0; }
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+    .philosophy-card {
+      padding: 40px 36px;
+      background: #fff;
+      border-radius: 2px;
+      border-top: 2px solid #E8C9A8;
+    }
+    .philosophy-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 80px;
+      font-weight: 300;
+      font-style: italic;
+      color: #E8C9A8;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .philosophy-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 400;
+      font-style: italic;
+      color: #2a2a2a;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .philosophy-card-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: #666;
+      line-height: 1.75;
+    }
+
+    /* Fun facts */
+    .facts-section { background: #fff; }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      border: 1px solid #E8C9A8;
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 56px;
+    }
+    .fact-card {
+      padding: 40px 32px;
+      text-align: center;
+      background: #fff;
+      border-right: 1px solid #E8C9A8;
+      transition: background 0.2s;
+    }
+    .fact-card:last-child { border-right: none; }
+    .fact-card:hover { background: #F5F2EE; }
+    .fact-icon {
+      font-size: 32px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .fact-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.6;
+    }
+    .fact-text strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #2a2a2a;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    /* facts section header */
+    .facts-header { text-align: center; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Book a Call</a>
+</nav>
+
+<!-- HERO -->
+<div class="about-hero">
+  <div class="about-hero-text">
+    <p class="section-eyebrow">Meet the Photographer</p>
+    <div class="section-rule"></div>
+    <h1 class="hero-headline">Hi, I'm <em>Baylee</em></h1>
+    <p class="hero-sub">Plano-based photographer.<br>Mom-friend energy.<br>Zero stiff poses.</p>
+  </div>
+  <div class="about-hero-photo">
+    <img src="https://picsum.photos/seed/baylee-hero-portrait/900/700" alt="Baylee Weaver, photographer"/>
+  </div>
+</div>
+
+<!-- STORY SECTION -->
+<section style="background:#fff;">
+  <div class="section-inner">
+    <div class="story-grid">
+      <div>
+        <p class="section-eyebrow">The Story</p>
+        <div class="section-rule"></div>
+        <h2 class="section-title">How it all <em>began</em></h2>
+        <div style="margin-top: 36px;" class="story-bio">
+          <p>Baylee grew up in the DFW area and discovered her love for photography while documenting her sister's pregnancy. What started as a borrowed camera and a curiosity became an obsession — and eventually, a calling.</p>
+          <p>She studied visual arts and spent years second-shooting for established photographers before launching her own studio in 2021. Those years taught her the discipline of craft, the patience of a long session, and the irreplaceable instinct to know when to press the shutter.</p>
+          <p>She specializes in the quiet, unhurried moments — the way a newborn curls into a chest, the way a partner looks at a bump, the chaos of a golden-hour family session. The image nobody planned for.</p>
+          <p>Baylee shoots primarily in natural light, in-home and at curated outdoor locations across Plano, Frisco, Allen, and McKinney. Her studio is calm, warm, and specifically designed for tiny humans.</p>
+        </div>
+      </div>
+      <div class="story-photo">
+        <img src="https://picsum.photos/seed/baylee-studio-warm/420/560" alt="Baylee in her studio"/>
+        <p class="story-photo-caption">Baylee · Plano Studio · 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY SECTION -->
+<section class="philosophy-section">
+  <div class="section-inner">
+    <div class="philosophy-header">
+      <p class="section-eyebrow">The Approach</p>
+      <div class="section-rule"></div>
+      <h2 class="section-title">What I believe <em>matters</em></h2>
+    </div>
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="philosophy-number">01</div>
+        <h3 class="philosophy-card-title">Less posing, more presence</h3>
+        <p class="philosophy-card-body">I give gentle guidance but never stiff direction. The best shots happen between poses — in the exhale, the laugh, the look. I'm here to capture who you actually are, not a version of you that feels uncomfortable.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-number">02</div>
+        <h3 class="philosophy-card-title">Light over everything</h3>
+        <p class="philosophy-card-body">I plan sessions around golden hour and window light. No harsh flash, ever. Natural light is the most flattering, most timeless medium — and it's the foundation of every image I make.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-number">03</div>
+        <h3 class="philosophy-card-title">You'll love these photos</h3>
+        <p class="philosophy-card-body">I won't deliver a gallery I'm not proud of. Quality over quantity, always. You'll receive fewer, better images — each one something you'd actually want to hang on a wall or print for a grandparent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUN FACTS SECTION -->
+<section class="facts-section">
+  <div class="section-inner">
+    <div class="facts-header">
+      <p class="section-eyebrow">A little more</p>
+      <div class="section-rule" style="margin: 16px auto 0;"></div>
+      <h2 class="section-title" style="margin-top: 0;">The things you <em>should know</em></h2>
+    </div>
+    <div class="facts-grid">
+      <div class="fact-card">
+        <span class="fact-icon">☕</span>
+        <p class="fact-text">
+          <strong>Fueled by iced coffee</strong>
+          Cannot start a session without one. It's non-negotiable.
+        </p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">📍</span>
+        <p class="fact-text">
+          <strong>Plano native</strong>
+          Born and raised in the DFW area. These roads, parks, and golden skies are home.
+        </p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">🎓</span>
+        <p class="fact-text">
+          <strong>Newborn safety certified</strong>
+          Your baby's safety is always the absolute priority. Always.
+        </p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">💛</span>
+        <p class="fact-text">
+          <strong>Will absolutely cry</strong>
+          Every single baby yawn gets me. I have zero apologies about this.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <p class="cta-eyebrow">Ready to begin?</p>
+  <h2 class="cta-headline">Let's make <em>memories</em></h2>
+  <p class="cta-sub">Schedule your free discovery call today</p>
+  <a href="contact.html" class="btn-white">Book a Free Call</a>
+  <a href="portfolio.html" class="btn-outline-white">See the Work</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Baylee Weaver</div>
+      <div class="footer-brand-script">photography</div>
+      <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigate</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Services</p>
+      <ul class="footer-links">
+        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+        <li><a href="services.html#maternity">Maternity Sessions</a></li>
+        <li><a href="services.html#family">Family Portraits</a></li>
+        <li><a href="membership.html">Membership</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+        <li><a href="#">Plano · Frisco · Allen · McKinney</a></li>
+        <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Baylee Weaver Photography · Plano, Texas · All rights reserved</span>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

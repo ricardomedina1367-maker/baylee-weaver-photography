@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ · Frequently Asked Questions · Baylee Weaver Photography · Plano TX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: #fff; color: #2a2a2a; line-height: 1.6; overflow-x: hidden; }
+    .caps { font-family: 'Montserrat', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(216,206,191,0.5); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #2a2a2a; text-decoration: none; font-weight: 400; }
+    .nav-logo span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: #4A6FA5; margin-left: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #4A6FA5; }
+    .nav-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #C97B50; padding: 10px 22px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: #b56a40; }
+    .btn-primary { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: #4A6FA5; padding: 14px 32px; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #3a5a8a; }
+    .btn-ghost { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #4A6FA5; text-decoration: none; border-bottom: 1px solid #8EB4D8; padding-bottom: 2px; transition: color 0.2s; }
+    .btn-ghost:hover { color: #2a4a70; }
+    .btn-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97B50; background: #fff; padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; margin-right: 16px; transition: background 0.2s; }
+    .btn-white:hover { background: #f5f2ee; }
+    .btn-outline-white { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; border: 1px solid rgba(255,255,255,0.5); padding: 16px 40px; text-decoration: none; border-radius: 2px; display: inline-block; transition: border-color 0.2s; }
+    .btn-outline-white:hover { border-color: #fff; }
+    section { padding: 96px 0; }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 72px; }
+    .section-rule { width: 48px; height: 1px; background: #C97B50; margin: 20px 0 32px; }
+    .section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #8EB4D8; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; line-height: 1.15; color: #2a2a2a; }
+    .section-title em { font-style: italic; color: #C97B50; }
+    .cta-banner { background: #C97B50; padding: 96px 72px; text-align: center; }
+    .cta-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-headline { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .cta-headline em { font-style: italic; }
+    .cta-sub { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 44px; }
+    footer { background: #2a2a2a; color: rgba(255,255,255,0.5); padding: 64px 72px 40px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+    .footer-brand-name { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+    .footer-brand-script { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #8EB4D8; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); margin-top: 14px; line-height: 1.6; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C9A8; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .footer-social { display: flex; gap: 20px; }
+    .footer-social a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-social a:hover { color: #fff; }
+
+    /* ── FAQ-specific ── */
+    body { padding-top: 68px; }
+
+    /* Hero */
+    .faq-hero {
+      background: #F5F2EE;
+      height: 50vh;
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .faq-hero .section-rule { margin: 20px auto 28px; }
+    .faq-hero .section-title { font-size: 56px; }
+    .faq-hero-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #888;
+      margin-top: 20px;
+    }
+
+    /* Accordion section */
+    .faq-section {
+      background: #fff;
+      padding: 96px 0;
+    }
+    .faq-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 72px;
+    }
+
+    /* Category */
+    .faq-category {
+      margin-bottom: 56px;
+    }
+    .faq-category:last-child { margin-bottom: 0; }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 8px;
+    }
+    .category-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #2a2a2a;
+      white-space: nowrap;
+    }
+    .category-rule {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, #C97B50 0%, #E8C9A8 100%);
+    }
+    .category-items {
+      margin-top: 8px;
+      border-top: 1px solid #eee;
+    }
+
+    /* Accordion item */
+    .accordion-item {
+      border-bottom: 1px solid #eee;
+    }
+    .accordion-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      gap: 16px;
+      text-align: left;
+    }
+    .accordion-trigger:hover .accordion-question { color: #4A6FA5; }
+    .accordion-question {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #2a2a2a;
+      line-height: 1.3;
+      transition: color 0.2s;
+    }
+    .accordion-icon {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #C97B50;
+      flex-shrink: 0;
+      line-height: 1;
+      transition: transform 0.25s;
+      width: 20px;
+      text-align: center;
+    }
+    .accordion-body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .accordion-body.open {
+      max-height: 600px;
+    }
+    .accordion-answer {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.7;
+      padding-bottom: 24px;
+      padding-right: 36px;
+    }
+
+    /* Still have questions */
+    .still-questions-section {
+      background: #2a2a2a;
+      padding: 72px 0;
+      text-align: center;
+    }
+    .still-questions-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 72px;
+    }
+    .still-questions-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #8EB4D8;
+      margin-bottom: 20px;
+    }
+    .still-questions-rule {
+      width: 48px;
+      height: 1px;
+      background: #C97B50;
+      margin: 0 auto 28px;
+    }
+    .still-questions-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+    .still-questions-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.55);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    .btn-clay {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #fff;
+      background: #C97B50;
+      padding: 16px 40px;
+      text-decoration: none;
+      border-radius: 2px;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-clay:hover { background: #b56a40; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Baylee Weaver <span>photography</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment.html">Investment</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="faq-hero">
+    <div>
+      <p class="section-eyebrow">FAQ</p>
+      <div class="section-rule"></div>
+      <h1 class="section-title">Questions? <em>Answered.</em></h1>
+      <p class="faq-hero-sub">Everything you want to know before booking</p>
+    </div>
+  </div>
+
+  <!-- FAQ Accordion -->
+  <div class="faq-section">
+    <div class="faq-inner">
+
+      <!-- Category 1: Before You Book -->
+      <div class="faq-category">
+        <div class="category-header">
+          <span class="category-title">Before You Book</span>
+          <div class="category-rule"></div>
+        </div>
+        <div class="category-items">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">What areas do you serve?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Baylee is based in Plano and serves the greater DFW area — including Frisco, Allen, McKinney, Richardson, Garland, and beyond. Studio sessions are available in her Plano home studio. Outdoor sessions can take place at locations of your choice or at one of her curated spots.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">How far in advance should I book?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Newborn sessions should be booked by the end of your second trimester (around 28–30 weeks). Maternity sessions are best at 28–34 weeks. Family sessions book 4–6 weeks in advance. Peak seasons (fall, spring) fill up fast.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Do you require a deposit?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Yes — a 25% retainer is required to hold your date, and the remaining balance is due one week before your session. Payment plans are available through Honeybook.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Do you offer payment plans?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Yes! You can split your balance into installments through the Honeybook client portal. Reach out to discuss a plan that works for your timeline.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 2: Sessions & What to Expect -->
+      <div class="faq-category">
+        <div class="category-header">
+          <span class="category-title">Sessions &amp; What to Expect</span>
+          <div class="category-rule"></div>
+        </div>
+        <div class="category-items">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">How long do sessions last?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Newborn sessions are 2–3 hours (babies set the pace). Maternity sessions are 60 minutes. Family sessions are 45 minutes.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">What should I wear?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">You'll receive a full styling guide after booking. In general: soft neutrals, muted tones, and flowy fabrics photograph beautifully. Avoid logos, neon, or heavy patterns. Baylee can help coordinate your whole family's outfits.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Where do sessions take place?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Newborn: Your home or Baylee's Plano studio. Maternity: Outdoor golden-hour locations or studio. Family: Parks, your backyard, or curated outdoor spots. Baylee has a list of favorite DFW locations she can share.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">My kids are wild. Will this work?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Yes — every time. Baylee's family sessions are built for real kids with real energy. She's patient, playful, and never rushes. Some of the best shots come from the chaos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 3: Your Gallery -->
+      <div class="faq-category">
+        <div class="category-header">
+          <span class="category-title">Your Gallery</span>
+          <div class="category-rule"></div>
+        </div>
+        <div class="category-items">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">When will I receive my photos?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Your fully edited gallery is delivered via Pic-Time within 14 days of your session. You'll get an email notification with a private link.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">How many photos will I receive?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Newborn: 40+ images. Maternity: 25+ images. Family: 30+ images. These are minimums — you'll often receive more.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Can I request specific edits?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Absolutely. If there's an image you'd like adjusted, just let Baylee know within 30 days of gallery delivery and she'll take care of it.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Can I print my photos anywhere?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">You receive full print release with your gallery. You're welcome to print wherever you like, though Baylee recommends the Pic-Time print store for the best quality and color accuracy.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 4: Newborn Specific -->
+      <div class="faq-category">
+        <div class="category-header">
+          <span class="category-title">Newborn Specific</span>
+          <div class="category-rule"></div>
+        </div>
+        <div class="category-items">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Is my baby safe during posing?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Always. Baylee is newborn posing certified and prioritizes safety above everything. Composite images are used when needed — meaning two safe photos are merged to create poses that look impossible to achieve safely in one shot. Your baby is never put in an unsafe position.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">What if my baby won't cooperate?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Newborn sessions are unhurried. Baylee allows plenty of time for feeding, soothing, and diaper changes. She's worked with fussy babies before and always gets the shots. If a session truly can't be completed, she'll reschedule at no charge.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="accordion-question">Can siblings or parents be in the photos?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p class="accordion-answer">Absolutely — sibling and family portraits are included in every newborn session at no extra charge.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Still have questions -->
+  <div class="still-questions-section">
+    <div class="still-questions-inner">
+      <p class="still-questions-eyebrow">We're Here to Help</p>
+      <div class="still-questions-rule"></div>
+      <h2 class="still-questions-title">Still have a question?</h2>
+      <p class="still-questions-body">Reach out anytime — Baylee replies personally to every message, usually within a few hours.</p>
+      <a href="contact.html" class="btn-clay">Send a Message</a>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <p class="cta-eyebrow">You're ready</p>
+    <h2 class="cta-headline"><em>Ready to book?</em></h2>
+    <p class="cta-sub">Plano &middot; Frisco &middot; Allen &middot; McKinney &middot; DFW</p>
+    <a href="contact.html" class="btn-white">Start the Conversation</a>
+    <a href="investment.html" class="btn-outline-white">View Investment</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Baylee Weaver</div>
+        <div class="footer-brand-script">photography</div>
+        <p class="footer-tagline">"You'll never have today again.<br>Let's make sure you remember it."</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#newborn">Newborn Sessions</a></li>
+          <li><a href="services.html#maternity">Maternity Sessions</a></li>
+          <li><a href="services.html#family">Family Portraits</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@bayleeweaver.com">hello@bayleeweaver.com</a></li>
+          <li><a href="#">Plano &middot; Frisco &middot; Allen &middot; McKinney</a></li>
+          <li><a href="contact.html" style="margin-top:8px; display:block;">Book a Free Call &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Baylee Weaver Photography &middot; Plano, Texas &middot; All rights reserved</span>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const triggers = document.querySelectorAll('.accordion-trigger');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.accordion-item');
+        const body = item.querySelector('.accordion-body');
+        const icon = trigger.querySelector('.accordion-icon');
+        const isOpen = body.classList.contains('open');
+
+        // Close all other open items
+        document.querySelectorAll('.accordion-body.open').forEach(openBody => {
+          openBody.classList.remove('open');
+          openBody.closest('.accordion-item').querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+          openBody.closest('.accordion-item').querySelector('.accordion-icon').textContent = '+';
+        });
+
+        // Toggle current
+        if (!isOpen) {
+          body.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+          icon.textContent = '−';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
